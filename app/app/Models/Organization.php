@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Organization extends Model
 {
     use Filterable;
-    
+
     public $timestamps = false;
 
     protected $fillable = ['name','building_id'];

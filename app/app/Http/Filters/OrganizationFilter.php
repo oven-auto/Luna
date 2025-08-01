@@ -53,7 +53,7 @@ Class OrganizationFilter extends AbstractFilter
     public function fnIds(Builder $builder, int|array $val)
     {
         $val = is_integer($val) ? [$val] : $val;
-       
+
         $builder->whereIn('organizations.id', $val);
     }
 
@@ -79,7 +79,7 @@ Class OrganizationFilter extends AbstractFilter
 
 
 
-    //фильтр по названию организации
+    //фильтр по названию организации, я так думаю просто лайком
     public function fnName(Builder $builder, string $val)
     {
         $builder->where('organizations.name', 'LIKE', '%'.$val.'%');
@@ -87,6 +87,9 @@ Class OrganizationFilter extends AbstractFilter
 
 
 
+    //Фильтр по деятельности через вложеность, машка умеет в рекурсивные запросы
+    //запросом получаю все айдишники указанной деятельности
+    //Лимитом ограничиваю машку, что бы она не запускала рекурсию глуже 3
     public function fnActivityGroup(Builder $builder, int $val)
     {
         $recQuery = DB::select("
@@ -96,7 +99,7 @@ Class OrganizationFilter extends AbstractFilter
                 SELECT a.id, a.parent_id FROM activities a
                 INNER JOIN rec_activities r ON r.id = a.parent_id
             )
-            SELECT * FROM rec_activities union select id, parent_id FROM activities where id = ?
+            (SELECT * FROM rec_activities LIMIT 3) union select id, parent_id FROM activities where id = ?
         ", [$val, $val]);
 
         $ids = collect($recQuery)->pluck('id')->toArray();

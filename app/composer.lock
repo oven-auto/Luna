@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "85c1d2065f70e38b0d6bf66559fb13c5",
+    "content-hash": "b5b77d6dd58ab297fb11a8e40e7b75b2",
     "packages": [
         {
             "name": "brick/math",
@@ -1330,16 +1330,16 @@
         },
         {
             "name": "laravel/sanctum",
-            "version": "v4.0.8",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sanctum.git",
-                "reference": "ec1dd9ddb2ab370f79dfe724a101856e0963f43c"
+                "reference": "fd6df4f79f48a72992e8d29a9c0ee25422a0d677"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/ec1dd9ddb2ab370f79dfe724a101856e0963f43c",
-                "reference": "ec1dd9ddb2ab370f79dfe724a101856e0963f43c",
+                "url": "https://api.github.com/repos/laravel/sanctum/zipball/fd6df4f79f48a72992e8d29a9c0ee25422a0d677",
+                "reference": "fd6df4f79f48a72992e8d29a9c0ee25422a0d677",
                 "shasum": ""
             },
             "require": {
@@ -1386,7 +1386,11 @@
                 "laravel",
                 "sanctum"
             ],
-            "time": "2025-01-26T19:34:36+00:00"
+            "support": {
+                "issues": "https://github.com/laravel/sanctum/issues",
+                "source": "https://github.com/laravel/sanctum"
+            },
+            "time": "2025-07-09T19:45:24+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -2065,6 +2069,71 @@
                 }
             ],
             "time": "2024-12-08T08:18:47+00:00"
+        },
+        {
+            "name": "malhal/laravel-geographical",
+            "version": "1.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/malhal/Laravel-Geographical.git",
+                "reference": "7e8b76f9c27430a32041357a9aef11721b36e523"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/malhal/Laravel-Geographical/zipball/7e8b76f9c27430a32041357a9aef11721b36e523",
+                "reference": "7e8b76f9c27430a32041357a9aef11721b36e523",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.*|6.*|7.*|8.*|9.*|10.*|11.*|12.*",
+                "php": ">=5.6.4"
+            },
+            "require-dev": {
+                "slevomat/coding-standard": "^8.6"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Geographical.php"
+                ],
+                "psr-4": {
+                    "Malhal\\Geographical\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Malcolm Hall",
+                    "email": "composer@malcolmhall.com"
+                }
+            ],
+            "description": "Easily add longitude and latitude columns to your records and use inherited functionality for calculating distances",
+            "keywords": [
+                "Laravel Geographical",
+                "Laravel-Geographical",
+                "Malcolm Hall",
+                "framework",
+                "geographical",
+                "laravel",
+                "latitude",
+                "longitude",
+                "malhal",
+                "models",
+                "user"
+            ],
+            "support": {
+                "issues": "https://github.com/malhal/Laravel-Geographical/issues",
+                "source": "https://github.com/malhal/Laravel-Geographical/tree/1.0.8"
+            },
+            "time": "2025-02-25T19:22:15+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -6363,16 +6432,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.13.3",
+            "version": "1.13.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "faed855a7b5f4d4637717c2b3863e277116beb36"
+                "reference": "07d290f0c47959fd5eed98c95ee5602db07e0b6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/faed855a7b5f4d4637717c2b3863e277116beb36",
-                "reference": "faed855a7b5f4d4637717c2b3863e277116beb36",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/07d290f0c47959fd5eed98c95ee5602db07e0b6a",
+                "reference": "07d290f0c47959fd5eed98c95ee5602db07e0b6a",
                 "shasum": ""
             },
             "require": {
@@ -6411,7 +6480,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.3"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.4"
             },
             "funding": [
                 {
@@ -6419,7 +6488,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-07-05T12:25:42+00:00"
+            "time": "2025-08-01T08:46:24+00:00"
         },
         {
             "name": "nunomaduro/collision",
@@ -8201,12 +8270,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }

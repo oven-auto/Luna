@@ -58,7 +58,7 @@ class OrganizationSeeder extends Seeder
                 ]);
             }
 
-            $org->activities()->sync($countActivity->random(rand(1, $countActivity->count())));
+            $org->activities()->sync($countActivity->random(3));
         }
     }
 }
