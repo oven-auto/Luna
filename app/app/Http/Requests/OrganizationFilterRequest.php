@@ -7,18 +7,22 @@ use Illuminate\Foundation\Http\FormRequest;
 class OrganizationFilterRequest extends FormRequest
 {
     /**
-     * Determine if the user is authorized to make this request.
+     * @OA\Schema(
+     *  schema="OrganizationFilterRequest",
+     *  @OA\Property(format="array", description="По Идентификаторам", property="ids", type="array", example="[1,2]", @OA\Items()),
+     *  @OA\Property(format="array", description="По идентификаторам зданий", property="buildings", type="array", example="[1,2]", @OA\Items()),
+     *  @OA\Property(format="array", description="По идентификаторам деятельности", property="activities", type="array", example="[1,2]", @OA\Items()),
+     *  @OA\Property(format="string", description="По названию", property="name", type="string"),
+     *  @OA\Property(format="integer", description="По родительской деятельности", property="activity_group", type="integer"),
+     * )
      */
     public function authorize(): bool
     {
         return true;
     }
 
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
-     */
+
+
     public function rules(): array
     {
         return [

@@ -2038,3 +2038,137 @@
 2025/08/01 10:09:03 [notice] 1#1: start worker process 30
 2025/08/01 10:09:03 [notice] 1#1: start worker process 31
 2025/08/01 10:09:03 [notice] 1#1: start worker process 32
+2025/08/01 21:57:05 [emerg] 1#1: host not found in upstream "php-fpm" in /etc/nginx/conf.d/default.conf:25
+2025/08/01 22:22:26 [notice] 1#1: using the "epoll" event method
+2025/08/01 22:22:26 [notice] 1#1: nginx/1.29.0
+2025/08/01 22:22:26 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14+deb12u1) 
+2025/08/01 22:22:26 [notice] 1#1: OS: Linux 6.1.0-31-amd64
+2025/08/01 22:22:26 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/08/01 22:22:26 [notice] 1#1: start worker processes
+2025/08/01 22:22:26 [notice] 1#1: start worker process 28
+2025/08/01 22:22:26 [notice] 1#1: start worker process 29
+2025/08/01 22:22:26 [notice] 1#1: start worker process 30
+2025/08/01 22:22:26 [notice] 1#1: start worker process 31
+2025/08/01 22:22:26 [notice] 1#1: start worker process 32
+2025/08/01 22:22:26 [notice] 1#1: start worker process 33
+2025/08/01 22:22:26 [notice] 1#1: start worker process 34
+2025/08/01 22:22:26 [notice] 1#1: start worker process 35
+2025/08/02 00:11:52 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/08/02 00:11:53 [notice] 28#28: gracefully shutting down
+2025/08/02 00:11:53 [notice] 29#29: gracefully shutting down
+2025/08/02 00:11:53 [notice] 31#31: gracefully shutting down
+2025/08/02 00:11:53 [notice] 33#33: gracefully shutting down
+2025/08/02 00:11:53 [notice] 35#35: gracefully shutting down
+2025/08/02 00:11:53 [notice] 34#34: gracefully shutting down
+2025/08/02 00:11:53 [notice] 32#32: gracefully shutting down
+2025/08/02 00:11:53 [notice] 30#30: gracefully shutting down
+2025/08/02 00:11:53 [notice] 29#29: exiting
+2025/08/02 00:11:53 [notice] 33#33: exiting
+2025/08/02 00:11:53 [notice] 28#28: exiting
+2025/08/02 00:11:53 [notice] 32#32: exiting
+2025/08/02 00:11:53 [notice] 28#28: exit
+2025/08/02 00:11:53 [notice] 32#32: exit
+2025/08/02 00:11:53 [notice] 29#29: exit
+2025/08/02 00:11:53 [notice] 31#31: exiting
+2025/08/02 00:11:53 [notice] 31#31: exit
+2025/08/02 00:11:53 [notice] 33#33: exit
+2025/08/02 00:11:53 [notice] 34#34: exiting
+2025/08/02 00:11:53 [notice] 35#35: exiting
+2025/08/02 00:11:53 [notice] 35#35: exit
+2025/08/02 00:11:53 [notice] 34#34: exit
+2025/08/02 00:11:53 [notice] 30#30: exiting
+2025/08/02 00:11:53 [notice] 30#30: exit
+2025/08/02 00:11:53 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2025/08/02 00:11:53 [notice] 1#1: worker process 29 exited with code 0
+2025/08/02 00:11:53 [notice] 1#1: worker process 28 exited with code 0
+2025/08/02 00:11:53 [notice] 1#1: worker process 31 exited with code 0
+2025/08/02 00:11:53 [notice] 1#1: worker process 32 exited with code 0
+2025/08/02 00:11:53 [notice] 1#1: worker process 34 exited with code 0
+2025/08/02 00:11:53 [notice] 1#1: signal 29 (SIGIO) received
+2025/08/02 00:11:53 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2025/08/02 00:11:53 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2025/08/02 00:11:53 [notice] 1#1: worker process 33 exited with code 0
+2025/08/02 00:11:53 [notice] 1#1: signal 29 (SIGIO) received
+2025/08/02 00:11:53 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2025/08/02 00:11:53 [notice] 1#1: worker process 35 exited with code 0
+2025/08/02 00:11:53 [notice] 1#1: signal 29 (SIGIO) received
+2025/08/02 00:11:53 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2025/08/02 00:11:53 [notice] 1#1: worker process 30 exited with code 0
+2025/08/02 00:11:53 [notice] 1#1: exit
+2025/08/03 20:20:52 [notice] 1#1: using the "epoll" event method
+2025/08/03 20:20:52 [notice] 1#1: nginx/1.29.0
+2025/08/03 20:20:52 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14+deb12u1) 
+2025/08/03 20:20:52 [notice] 1#1: OS: Linux 6.1.0-31-amd64
+2025/08/03 20:20:52 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/08/03 20:20:52 [notice] 1#1: start worker processes
+2025/08/03 20:20:52 [notice] 1#1: start worker process 28
+2025/08/03 20:20:52 [notice] 1#1: start worker process 29
+2025/08/03 20:20:52 [notice] 1#1: start worker process 30
+2025/08/03 20:20:52 [notice] 1#1: start worker process 31
+2025/08/03 20:20:52 [notice] 1#1: start worker process 32
+2025/08/03 20:20:52 [notice] 1#1: start worker process 33
+2025/08/03 20:20:52 [notice] 1#1: start worker process 34
+2025/08/03 20:20:52 [notice] 1#1: start worker process 35
+2025/08/03 21:55:40 [error] 28#28: *43 open() "/var/www/public/docs/asset/swagger-ui.css" failed (2: No such file or directory), client: 173.16.238.1, server: _, request: "GET /docs/asset/swagger-ui.css?v=55452c2f2bab78af23f9300aaad5a4ed HTTP/1.1", host: "localhost:8380", referrer: "http://localhost:8380/api/documentation"
+2025/08/03 21:55:40 [error] 28#28: *45 open() "/var/www/public/docs/asset/swagger-ui-bundle.js" failed (2: No such file or directory), client: 173.16.238.1, server: _, request: "GET /docs/asset/swagger-ui-bundle.js?v=7725b03bbfbc5bb0d8a0aa2f23a5ad81 HTTP/1.1", host: "localhost:8380", referrer: "http://localhost:8380/api/documentation"
+2025/08/03 21:55:40 [error] 28#28: *46 open() "/var/www/public/docs/asset/swagger-ui-standalone-preset.js" failed (2: No such file or directory), client: 173.16.238.1, server: _, request: "GET /docs/asset/swagger-ui-standalone-preset.js?v=c52d69e3948ac5fdffc432e95fc737a3 HTTP/1.1", host: "localhost:8380", referrer: "http://localhost:8380/api/documentation"
+2025/08/03 21:55:40 [error] 28#28: *46 open() "/var/www/public/docs/asset/favicon-32x32.png" failed (2: No such file or directory), client: 173.16.238.1, server: _, request: "GET /docs/asset/favicon-32x32.png?v=40d4f2c38d1cd854ad463f16373cbcb6 HTTP/1.1", host: "localhost:8380", referrer: "http://localhost:8380/api/documentation"
+2025/08/03 21:55:40 [error] 28#28: *46 open() "/var/www/public/docs/asset/favicon-16x16.png" failed (2: No such file or directory), client: 173.16.238.1, server: _, request: "GET /docs/asset/favicon-16x16.png?v=f0ae831196d55d8f4115b6c5e8ec5384 HTTP/1.1", host: "localhost:8380", referrer: "http://localhost:8380/api/documentation"
+2025/08/03 21:55:44 [error] 28#28: *46 open() "/var/www/public/docs/asset/swagger-ui.css" failed (2: No such file or directory), client: 173.16.238.1, server: _, request: "GET /docs/asset/swagger-ui.css?v=55452c2f2bab78af23f9300aaad5a4ed HTTP/1.1", host: "localhost:8380", referrer: "http://localhost:8380/api/documentation"
+2025/08/03 21:55:44 [error] 28#28: *45 open() "/var/www/public/docs/asset/swagger-ui-bundle.js" failed (2: No such file or directory), client: 173.16.238.1, server: _, request: "GET /docs/asset/swagger-ui-bundle.js?v=7725b03bbfbc5bb0d8a0aa2f23a5ad81 HTTP/1.1", host: "localhost:8380", referrer: "http://localhost:8380/api/documentation"
+2025/08/03 21:55:44 [error] 28#28: *43 open() "/var/www/public/docs/asset/swagger-ui-standalone-preset.js" failed (2: No such file or directory), client: 173.16.238.1, server: _, request: "GET /docs/asset/swagger-ui-standalone-preset.js?v=c52d69e3948ac5fdffc432e95fc737a3 HTTP/1.1", host: "localhost:8380", referrer: "http://localhost:8380/api/documentation"
+2025/08/03 21:55:48 [error] 28#28: *43 open() "/var/www/public/docs/asset/swagger-ui.css" failed (2: No such file or directory), client: 173.16.238.1, server: _, request: "GET /docs/asset/swagger-ui.css?v=55452c2f2bab78af23f9300aaad5a4ed HTTP/1.1", host: "localhost:8380", referrer: "http://localhost:8380/api/documentation"
+2025/08/04 01:31:27 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/08/04 01:31:27 [notice] 29#29: gracefully shutting down
+2025/08/04 01:31:27 [notice] 30#30: gracefully shutting down
+2025/08/04 01:31:27 [notice] 31#31: gracefully shutting down
+2025/08/04 01:31:27 [notice] 33#33: gracefully shutting down
+2025/08/04 01:31:27 [notice] 32#32: gracefully shutting down
+2025/08/04 01:31:27 [notice] 35#35: gracefully shutting down
+2025/08/04 01:31:27 [notice] 28#28: gracefully shutting down
+2025/08/04 01:31:27 [notice] 34#34: gracefully shutting down
+2025/08/04 01:31:27 [notice] 33#33: exiting
+2025/08/04 01:31:27 [notice] 35#35: exiting
+2025/08/04 01:31:27 [notice] 34#34: exiting
+2025/08/04 01:31:27 [notice] 31#31: exiting
+2025/08/04 01:31:27 [notice] 32#32: exiting
+2025/08/04 01:31:27 [notice] 34#34: exit
+2025/08/04 01:31:27 [notice] 30#30: exiting
+2025/08/04 01:31:27 [notice] 35#35: exit
+2025/08/04 01:31:27 [notice] 33#33: exit
+2025/08/04 01:31:27 [notice] 32#32: exit
+2025/08/04 01:31:27 [notice] 31#31: exit
+2025/08/04 01:31:27 [notice] 28#28: exiting
+2025/08/04 01:31:27 [notice] 29#29: exiting
+2025/08/04 01:31:27 [notice] 30#30: exit
+2025/08/04 01:31:27 [notice] 28#28: exit
+2025/08/04 01:31:27 [notice] 29#29: exit
+2025/08/04 01:31:28 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2025/08/04 01:31:28 [notice] 1#1: worker process 28 exited with code 0
+2025/08/04 01:31:28 [notice] 1#1: signal 29 (SIGIO) received
+2025/08/04 01:31:28 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2025/08/04 01:31:28 [notice] 1#1: worker process 29 exited with code 0
+2025/08/04 01:31:28 [notice] 1#1: worker process 30 exited with code 0
+2025/08/04 01:31:28 [notice] 1#1: worker process 31 exited with code 0
+2025/08/04 01:31:28 [notice] 1#1: worker process 33 exited with code 0
+2025/08/04 01:31:28 [notice] 1#1: worker process 34 exited with code 0
+2025/08/04 01:31:28 [notice] 1#1: worker process 35 exited with code 0
+2025/08/04 01:31:28 [notice] 1#1: signal 29 (SIGIO) received
+2025/08/04 01:31:28 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2025/08/04 01:31:28 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2025/08/04 01:31:28 [notice] 1#1: worker process 32 exited with code 0
+2025/08/04 01:31:28 [notice] 1#1: exit
+2025/08/04 07:54:22 [notice] 1#1: using the "epoll" event method
+2025/08/04 07:54:22 [notice] 1#1: nginx/1.29.0
+2025/08/04 07:54:22 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14+deb12u1) 
+2025/08/04 07:54:22 [notice] 1#1: OS: Linux 6.1.0-31-amd64
+2025/08/04 07:54:22 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/08/04 07:54:22 [notice] 1#1: start worker processes
+2025/08/04 07:54:22 [notice] 1#1: start worker process 28
+2025/08/04 07:54:22 [notice] 1#1: start worker process 29
+2025/08/04 07:54:22 [notice] 1#1: start worker process 30
+2025/08/04 07:54:22 [notice] 1#1: start worker process 31
+2025/08/04 07:54:22 [notice] 1#1: start worker process 32
+2025/08/04 07:54:22 [notice] 1#1: start worker process 33
+2025/08/04 07:54:22 [notice] 1#1: start worker process 34
+2025/08/04 07:54:22 [notice] 1#1: start worker process 35

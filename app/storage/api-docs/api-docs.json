@@ -1,0 +1,265 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Ну как бы апидока",
+        "description": "Апидока для тз",
+        "contact": {
+            "email": "wanokazak@gmail.com"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/auth/register": {
+            "post": {
+                "tags": [
+                    "Авторизация/Аутентификация"
+                ],
+                "summary": "Регистрация пользователя",
+                "operationId": "a8ea292cef4194c51ae2497813faa7fa",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/AuthRegisterRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        },
+        "/api/auth/login": {
+            "post": {
+                "tags": [
+                    "Авторизация/Аутентификация"
+                ],
+                "summary": "Логин пользователя",
+                "operationId": "f412dd5191988201d4929d05650d713b",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/AuthLoginRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        },
+        "/api/auth/logout": {
+            "post": {
+                "tags": [
+                    "Авторизация/Аутентификация"
+                ],
+                "summary": "Выход пользователя",
+                "operationId": "38926222ac91dd0fb0485e83cd310b53",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        },
+        "/api/organizations": {
+            "get": {
+                "tags": [
+                    "Организация"
+                ],
+                "summary": "Получить список организаций, подходящих под условие фильтрации.",
+                "operationId": "a0f2f80622e6eaa97f7fa51b654350ce",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/OrganizationFilterRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        },
+        "/api/organizations/{id}": {
+            "get": {
+                "tags": [
+                    "Организация"
+                ],
+                "summary": "Получить организацию по ее идентификатору.",
+                "operationId": "c02465138fc4d26490db2c4b95815eaf",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        },
+        "/api/organizations/bycoords": {
+            "get": {
+                "tags": [
+                    "Организация"
+                ],
+                "summary": "Получить список зданий и организаций, находящихся в указаном квадрате, относительно выбранной точки.",
+                "operationId": "99639c5746ce5e7eff7a8a9b13d863fb",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/OrganizationCoordRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "AuthLoginRequest": {
+                "required": [
+                    "email",
+                    "password"
+                ],
+                "properties": {
+                    "email": {
+                        "description": "Email пользователя",
+                        "type": "string",
+                        "format": "string"
+                    },
+                    "password": {
+                        "description": "Пароль пользователя",
+                        "type": "string",
+                        "format": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "AuthRegisterRequest": {
+                "required": [
+                    "name",
+                    "email",
+                    "password"
+                ],
+                "properties": {
+                    "name": {
+                        "description": "Имя пользователя",
+                        "type": "string",
+                        "format": "string"
+                    },
+                    "email": {
+                        "description": "Email пользователя",
+                        "type": "string",
+                        "format": "string"
+                    },
+                    "password": {
+                        "description": "Пароль пользователя",
+                        "type": "string",
+                        "format": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "OrganizationCoordRequest": {
+                "properties": {
+                    "coordx": {
+                        "description": "Ширина",
+                        "type": "string",
+                        "format": "string"
+                    },
+                    "coordy": {
+                        "description": "Долгота",
+                        "type": "string",
+                        "format": "string"
+                    },
+                    "radius": {
+                        "description": "Радиус",
+                        "type": "string",
+                        "format": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "OrganizationFilterRequest": {
+                "properties": {
+                    "ids": {
+                        "description": "По Идентификаторам",
+                        "type": "array",
+                        "format": "array",
+                        "items": {},
+                        "example": "[1,2]"
+                    },
+                    "buildings": {
+                        "description": "По идентификаторам зданий",
+                        "type": "array",
+                        "format": "array",
+                        "items": {},
+                        "example": "[1,2]"
+                    },
+                    "activities": {
+                        "description": "По идентификаторам деятельности",
+                        "type": "array",
+                        "format": "array",
+                        "items": {},
+                        "example": "[1,2]"
+                    },
+                    "name": {
+                        "description": "По названию",
+                        "type": "string",
+                        "format": "string"
+                    },
+                    "activity_group": {
+                        "description": "По родительской деятельности",
+                        "type": "integer",
+                        "format": "integer"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Авторизация/Аутентификация",
+            "description": "Авторизация/Аутентификация"
+        },
+        {
+            "name": "Организация",
+            "description": "Организация"
+        }
+    ]
+}

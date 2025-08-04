@@ -6,19 +6,22 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class OrganizationCoordRequest extends FormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
+        /**
+     * @OA\Schema(
+     *  schema="OrganizationCoordRequest",
+     *  @OA\Property(format="string", description="Ширина", property="coordx", type="string"),
+     *  @OA\Property(format="string", description="Долгота", property="coordy", type="string"),
+     *  @OA\Property(format="string", description="Радиус", property="radius", type="string"),
+     * )
      */
     public function authorize(): bool
     {
         return true;
     }
 
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
-     */
+
+
+
     public function rules(): array
     {
         return [

@@ -15,10 +15,14 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        // User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        $firstUser = User::first();
+
+        //if(!$firstUser)
+            User::factory()->create([
+                'name' => 'admin',
+                'email' => 'admin@admin.ru',
+                'password'=> '123456',
+            ]);
 
         $this->call([
             ActivitySeeder::class,
